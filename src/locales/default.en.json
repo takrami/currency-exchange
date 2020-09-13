@@ -1,12 +1,14 @@
 {
   "en-US": {
     "translation": {
-      "search_placeholder": "Search country name...",
+      "search_placeholder": "Search for the country name",
       "country": "Country",
       "population": "Population",
       "currency": "Currency",
       "title": "Currency Exchange",
-      "copyright": "© All rights reserved."
+      "copyright": "© All rights reserved.",
+      "capital": "capital",
+      "amount_in_sek": "Amount in SEK"
     }
   }
 }

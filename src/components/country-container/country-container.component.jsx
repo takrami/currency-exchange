@@ -6,7 +6,7 @@ import SearchBox from "../search-box/search-box.component";
 import CountryContext from "../country-context/country-context.component";
 import Loading from "../loading/loading.component";
 
-const { COUNTRY_BASE_URL, CURRENCY_BASE_URL } = getEnv();
+const { COUNTRY_BASE_URL, CURRENCY_BASE_URL, CURRENCY_API_KEY } = getEnv();
 
 const CountryContainer = () => {
   const [countries, setCountries] = useState([]);
@@ -19,8 +19,11 @@ const CountryContainer = () => {
       const data = await response.json();
       setCountries(data);
     }
+
     async function fetchRates() {
-      const response = await fetch(CURRENCY_BASE_URL);
+      const response = await fetch(
+        `${CURRENCY_BASE_URL}?access_key=${CURRENCY_API_KEY}`
+      );
       const data = await response.json();
       setRates(data.rates);
     }

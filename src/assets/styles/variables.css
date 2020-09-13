@@ -4,8 +4,7 @@
   --normal-font: 400;
   --bold-font: 700;
 
-  --main-color: #2c0052;
-  --sub-color: #c90;
+  --main-color: #c90;
   --black-color: #000;
   --dark-color: #555;
   --darker-color: #333;
@@ -19,5 +18,5 @@
   --large-font: 1.2em;
   --larger-font: 2em;
 
-  --main-wrapper: 1000px;
+  --main-wrapper: 900px;
 }

@@ -6,6 +6,7 @@ const Input = styled.input.attrs((props) => ({
   border: 1px solid var(--light-color);
   background-color: var(--white-color);
   border-radius: var(--spacing);
+  max-width: 100%;
 
   ${(props) => {
     if (props.small) {

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import { formatNumber } from "../../utils";
 import { Input } from "../../assets/styles/shared";
@@ -14,6 +15,7 @@ import {
 
 const CountryItem = ({ country, itemsRates }) => {
   const [base, setBase] = useState(1);
+  const { t } = useTranslation();
 
   return (
     <CountryItemContainer>
@@ -22,15 +24,15 @@ const CountryItem = ({ country, itemsRates }) => {
           <CountryFlag src={country.flag} /> {country.name}
         </CountryDetailsTitle>
         <CountryDetailsItem>
-          Capital: <strong>{country.capital}</strong>{" "}
+          {t("capital")} :<strong>{country.capital}</strong>{" "}
         </CountryDetailsItem>
         <CountryDetailsItem>
-          Population: <strong>{formatNumber(country.population)}</strong>
+          {t("population")}: <strong>{formatNumber(country.population)}</strong>
         </CountryDetailsItem>
       </CountryDetails>
       <CurrencyExchange>
         <CountryDetailsTitle>
-          <Amount>Amount in SEK</Amount>
+          <Amount> {t("amount_in_sek")} </Amount>
           <Input
             type="number"
             small

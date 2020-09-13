@@ -1,12 +1,14 @@
 {
   "fr-FR": {
     "translation": {
-      "search_placeholder": "Rechercher le nom du pays...",
+      "search_placeholder": "Recherchez le nom du pays",
       "country": "Pays",
       "population": "Population",
       "currency": "Devise",
-      "title": "",
-      "copyright": "© Tous les droits sont réservés."
+      "title": "Échange de devises",
+      "copyright": "© Tous les droits sont réservés.",
+      "capital": "Capitale",
+      "amount_in_sek": "Montant en SEK"
     }
   }
 }

@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 const CountryItemContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: calc(var(--spacing) * 2);
-  max-width: var(--main-wrapper);
+  margin-bottom: calc(var(--spacing) * 4);
+  padding: calc(var(--spacing) * 2);
 `;
 
 const CountryDetails = styled.ul`
@@ -16,6 +17,7 @@ const CountryDetailsTitle = styled.h2`
   font-weight: var(--bold-font);
   font-size: var(--medium-font);
   color: var(--darker-color);
+  margin: calc(var(--spacing) * 2) auto;
 `;
 
 const CountryDetailsItem = styled.li`

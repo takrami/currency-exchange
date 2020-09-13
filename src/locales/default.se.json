@@ -1,12 +1,14 @@
 {
   "se-SE": {
     "translation": {
-      "search_placeholder": "Sök landets namn...",
-      "country": "Land",
+      "search_placeholder": "Sök efter landets namn",
+      "country": "Landa",
       "population": "Befolkning",
       "currency": "Valuta",
-      "title": "",
-      "copyright": "© Alla rättigheter förbehållna."
+      "title": "Valutaväxling",
+      "copyright": "© Alla rättigheter förbehållna.",
+      "capital": "huvudstad",
+      "amount_in_sek": "Belopp i SEK"
     }
   }
 }

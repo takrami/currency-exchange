@@ -19,8 +19,9 @@ const Logo = styled.img`
 
 const Title = styled.h1`
   font-size: var(--larger-font);
-  color: var(--sub-color);
+  color: var(--main-color);
   margin-bottom: 0;
+  text-align: center;
 `;
 
 export { HeaderContainer, LogoContainer, Logo, Title };
