@@ -1,0 +1,12 @@
+{
+  "fr-FR": {
+    "translation": {
+      "search_placeholder": "Rechercher le nom du pays...",
+      "country": "Pays",
+      "population": "Population",
+      "currency": "Devise",
+      "title": "",
+      "copyright": "© Tous les droits sont réservés."
+    }
+  }
+}

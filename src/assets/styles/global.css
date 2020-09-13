@@ -1,0 +1,34 @@
+@import "./fonts.css";
+@import "./variables.css";
+
+body {
+  font-family: var(--primary-font);
+  font-weight: var(--normal-font);
+  background-color: var(--lighter-color);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

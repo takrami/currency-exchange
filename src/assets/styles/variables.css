@@ -1,0 +1,23 @@
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --thin-font: 100;
+  --normal-font: 400;
+  --bold-font: 700;
+
+  --main-color: #2c0052;
+  --sub-color: #c90;
+  --black-color: #000;
+  --dark-color: #555;
+  --darker-color: #333;
+  --white-color: #fff;
+  --light-color: #e1dbdb;
+  --lighter-color: #f9f9f9;
+
+  --spacing: 4px;
+  --small-font: 0.7em;
+  --medium-font: 1em;
+  --large-font: 1.2em;
+  --larger-font: 2em;
+
+  --main-wrapper: 1000px;
+}
