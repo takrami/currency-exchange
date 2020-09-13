@@ -23,6 +23,10 @@ const CountryDetailsItem = styled.li`
   font-size: var(--small-font);
 `;
 
+const Amount = styled.span`
+  padding-right: calc(var(--spacing) * 2);
+`;
+
 const CountryFlag = styled.img`
   width: 20px;
 `;
@@ -38,6 +42,7 @@ export {
   CountryDetails,
   CountryDetailsTitle,
   CountryDetailsItem,
+  Amount,
   CountryFlag,
   CurrencyExchange,
 };

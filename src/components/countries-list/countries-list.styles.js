@@ -4,6 +4,7 @@ const StyledCountriesList = styled.div`
   display: grid;
   justify-content: center;
   grid-gap: calc(var(--spacing) * 4);
+  padding-bottom: calc(var(--spacing) * 4);
 `;
 
 export { StyledCountriesList };

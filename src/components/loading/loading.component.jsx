@@ -1,7 +1,13 @@
 import React from "react";
 
+import { LoadingContainer, LoadingOverlay } from "./loading.styles";
+
 const Loading = () => {
-  return <div>Loading....</div>;
+  return (
+    <LoadingOverlay>
+      <LoadingContainer />
+    </LoadingOverlay>
+  );
 };
 
 export default Loading;

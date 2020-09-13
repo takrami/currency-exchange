@@ -7,6 +7,7 @@ import {
   CountryDetails,
   CountryDetailsItem,
   CountryDetailsTitle,
+  Amount,
   CountryFlag,
   CurrencyExchange,
 } from "./country-item.styles";
@@ -20,23 +21,23 @@ const CountryItem = ({ country, itemsRates }) => {
         <CountryDetailsTitle>
           <CountryFlag src={country.flag} /> {country.name}
         </CountryDetailsTitle>
-        <CountryDetailsItem>Capital: {country.capital}</CountryDetailsItem>
         <CountryDetailsItem>
-          Population: {formatNumber(country.population)}
+          Capital: <strong>{country.capital}</strong>{" "}
+        </CountryDetailsItem>
+        <CountryDetailsItem>
+          Population: <strong>{formatNumber(country.population)}</strong>
         </CountryDetailsItem>
       </CountryDetails>
       <CurrencyExchange>
-        <span>
-          <CountryDetailsTitle>
-            Amount in SEK
-            <Input
-              type="number"
-              small
-              value={base}
-              onChange={(e) => setBase(e.target.value)}
-            />
-          </CountryDetailsTitle>
-        </span>
+        <CountryDetailsTitle>
+          <Amount>Amount in SEK</Amount>
+          <Input
+            type="number"
+            small
+            value={base}
+            onChange={(e) => setBase(e.target.value)}
+          />
+        </CountryDetailsTitle>
 
         {country.currencies.map((currency) => {
           if (!currency.code || currency.code === "(none)") {
@@ -45,7 +46,8 @@ const CountryItem = ({ country, itemsRates }) => {
 
           return (
             <CountryDetailsItem key={currency.code}>
-              {currency.code} : {(base * itemsRates[currency.code]).toFixed(2)}
+              {currency.code} :{" "}
+              <strong>{(base * itemsRates[currency.code]).toFixed(2)}</strong>
             </CountryDetailsItem>
           );
         })}
