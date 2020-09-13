@@ -7,7 +7,7 @@ Simple app to convert SEK to different currencies.
 Clone the project and install dependencies by the command below:
 
 ```sh
-yarn i
+yarn
 ```
 
 This app uses two different APIs:
@@ -53,3 +53,4 @@ The things need to be done if there was more time.
 - [ ] Adding dark mode theme with `styled-component`.
 - [ ] Re-thinking about the components' naming.
 - [ ] Adding `storybook` for visual documentation.
+- [ ] Improving not found page.
